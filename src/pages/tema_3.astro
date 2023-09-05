@@ -1,0 +1,155 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Tema 3">
+    <main>
+        <h1>Tema 3 - Grundlæggende UX</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>03.02.02 Løsning</h2>
+            <p>I opgave 03.02.02 løsning skulle vi udarbejde en prototype i XD, for vores egen t-shirt webshop. Vi skulle under opgaven lave forskellige research, skitser, moodboard, styletile og test.</p>
+            <h2>Processen</h2>
+            <p>Jeg valgte at designe en webshop kaldet ”Lykke farve”, der solgte farverige t-shirt, sweatshirt og sweatpants i flere farver, i en bred størrelsesvariant.</p>
+            <p>
+              I starten af opgaven lærte vi om flere forskellige research metoder som desk research, observation, interview og survey. Ved hjælp af alle disse metoder, fandt jeg ud af hvad min målgruppe var interesseret i, og fik bekræftet min teori om
+              der manglede farverigt tøj til kurvede kvinder.
+            </p>
+            <p>
+              Vi lærte om forskellige skitse metoder som lightning demo, ideas, crazy 8s og solution sketch. Især crazy 8s metoden hjalp mig til at videreudvikle min ide. Det er en skitse metode, hvor du laver 8 versioner af den samme ide, men du har
+              kun 1 minut til hver ide. Under opgaven lærte vi om nogle testmetoder som art museum og five act interview, på den måde fik jeg et realistisk syn hvordan brugeren ville bruge websitet.
+            </p>
+  
+            <p>
+              Vi lærte at de fleste brugere ikke læser siden, men scanner den for informationer, derfor var det vigtigt for mig at kunne give brugeren relevante informationer på en nem og hurtig måde. Det lærte vi at gøre med copywriting, copy og
+              microcopy. På den måde fangede jeg brugeren, og førte dem længere ind på sitet.
+            </p>
+          </div>
+          <div class="pic">
+            <img src="src/assets/images/lykkefarve.webp" alt="Lykke farve prototype billede" />
+            <div class="button">
+                <a href="https://xd.adobe.com/view/10fcdeb9-3591-48f1-988a-85ab0c242bed-45af/">Lykke farve</a>
+              </div>
+          </div>
+          <div class="pic1">
+            <img src="src/assets/images/pitch.webp" alt="Lykke farve pitch billede" />
+            <div class="button reverse">
+                <a href="https://studkea-my.sharepoint.com/:p:/g/personal/idax327t_stud_kea_dk/EYuCj7RxFK5FqOiep0zEK2oBj1UJboYNHXYdRZtFEnCKoQ?e=5cjIeg">Pitchen</a>
+              </div>
+          </div>
+          <div class="text order">
+            <h2>03.03.02 Pitch</h2>
+            <p>I denne opgave skulle vi forberede et UX pitchdeck, til en 5 minutters præsentation af vores webshop. Vi skulle gennemgå vigtige indsigter fra researchen, vores design process, gennemgang af XD-prototypen og konklusion af opgaven.</p>
+            <h2>Processen</h2>
+            <p>
+              Til denne opgave lærte vi om to forskellige pitch metoder, elevator pitch og demo pitch. Elevator pitchen havde stort fokus på at sælge sig selv, man skulle fortælle om en selv og hvad man ledte efter. I demo pitchen skulle du præsentere
+              dig selv, et problem og en mulig løsning på problemet. At pitche handler generelt om at du hurtigt og kort skal opfange lytterens opmærksomhed.
+            </p>
+            <p>
+              Min egen pitch fulgte mere demo pitch metoden, da jeg præsenterede mit produkt og mig selv, derefter præsenterede hvordan jeg gennem researchen kom frem til problemet, at der mangler farverigt tøj til kurvede kvinder. <br />
+              Jeg viste min design proces med mine moodboard, skitser og prototype, og på den måde fik stillet en mulige løsning til problemet. Til sidst lavede jeg en konklusion på hvordan brugeren brugte sitet, som jeg undersøgte gennem five act
+              interview og art museum testene.
+            </p>
+          </div>
+          <div class="pic2">
+            <img src="src/assets/images/pitch.webp" alt="Lykke farve pitch billede" />
+            <div class="button reverse">
+                <a href="https://studkea-my.sharepoint.com/:p:/g/personal/idax327t_stud_kea_dk/EYuCj7RxFK5FqOiep0zEK2oBj1UJboYNHXYdRZtFEnCKoQ?e=5cjIeg">Pitchen</a>
+              </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #e77d7940;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--septenary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--septenary);
+  border: 1px solid var(--septenary);
+  padding: 15px 40px;
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>

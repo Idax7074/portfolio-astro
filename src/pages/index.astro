@@ -1,0 +1,113 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Circles from "../components/Circles.astro";
+import Scrollimage from "../components/Scrollimage.astro";
+---
+
+<MainLayout title="Forside">
+	<main>
+        <h1>Portfolio eksamen</h1>
+      <div class="main-area">
+        <Circles/>
+      </div>
+      <section class="image_gallery">
+        <div class="scrollimage">
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Tema 1 - Introuge"
+        />
+        <Scrollimage 
+        image="src/assets/images/web.webp"
+        text="Tema 2 - Grundlæggende web"
+        />
+        <Scrollimage 
+        image="src/assets/images/UX.webp"
+        text="Tema 3 - Grundlæggende UX"
+        />
+        <Scrollimage 
+        image="src/assets/images/animation.webp"
+        text="Tema 4 - Grundlæggende animation"
+        />
+        <Scrollimage 
+        image="src/assets/images/indhold.webp"
+        text="Tema 5 - Grundlæggende indhold"
+        />
+        <Scrollimage 
+        image="src/assets/images/portfolio.webp"
+        text="Tema 6 - Portfolio eksamen"
+        />
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Tema 7 - Web II"
+        />
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Tema 8 - UI/UX II"
+        />
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Tema 9 - Indhold II"
+        />
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Tema 10 - Eksamensprojektet"
+        />
+        <Scrollimage 
+        image="src/assets/images/noface.webp"
+        text="Om mig"
+        />
+        </div>
+        <div class="arrows">
+          <i class="fa fa-angle-double-left"></i>
+          <i class="fas fa-mouse"></i>
+          <i class="fa fa-angle-double-right"></i>
+        </div>
+      </section>
+    </main>
+</MainLayout>
+
+<style>
+.image_gallery {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+div.scrollimage {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollimage img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fa-mouse {
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+
+.fa-angle-double-right {
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-right:hover {
+  color: var(--tertiary);
+}
+
+.fa-angle-double-left {
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-left:hover {
+  color: var(--tertiary);
+}
+</style>

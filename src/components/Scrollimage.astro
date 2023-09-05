@@ -1,0 +1,18 @@
+---
+const {image, text} = Astro.props
+---
+<a href="/" id="image_1">
+    <img src={image} alt="No face painting" />
+<p>{text}</p></a>
+
+<style>
+a {
+  display: inline-block;
+  color: var(--secondary);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-block: 10px;
+}
+</style>

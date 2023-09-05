@@ -1,0 +1,208 @@
+---
+
+---
+
+<footer class="footer">
+    <div class="col_1">
+      <h3><img src="src/assets/images/logo.svg" class="footer-logo" alt="logo" /></h3>
+      <p>Ida Marie Stoffersen Hjortnæs</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/idahjortnaes/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/ida-marie-hjortn%C3%A6s/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCH7Z9J1EOUAZnx4lO89RIzw"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="col_2">
+      <h3>Nyhedsbrev</h3>
+      <form>
+        <input type="email" placeholder="Email adresse" required />
+        <br />
+        <button type="submit">Indsend</button>
+      </form>
+    </div>
+    <div class="col_3">
+      <h3>Kontakt</h3>
+      <div class="footer_social">
+        <i class="fa-solid fa-envelope"></i>
+        <p>idax327t@stud.kea.dk</p>
+        <i class="fa-solid fa-phone"></i>
+        <p>+45 27 14 36 09</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .footer {
+  margin-top: 150px;
+  width: 100%;
+  padding: 100px 15%;
+  background: var(--quaternary);
+  color: var(--primary);
+  display: flex;
+}
+
+.col_1 h3 img {
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: -28px;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer div p {
+  text-align: left;
+}
+
+.footer div div {
+  text-align: left;
+}
+
+.col_2 {
+  flex-grow: 2;
+}
+
+.footer div h3 {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.col_1 a {
+  color: var(--tertiary);
+  font-size: 1.3rem;
+  margin-inline: 5px;
+  text-decoration: none;
+}
+
+.col_1 h3 {
+  border-bottom: 2px solid var(--tertiary);
+  padding-bottom: 20px;
+}
+
+.col_3 h3 {
+  border-bottom: 2px solid var(--tertiary);
+  padding-bottom: 20px;
+}
+
+.footer div p {
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: var(--tertiary);
+  color: var(--primary);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer_social {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.footer_social i {
+  color: var(--tertiary);
+}
+
+@media (min-width: 1030px) and (max-width: 1300px) {
+  .footer {
+    padding: 100px 5%;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1030px) {
+  .footer {
+    padding: 100px 2%;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 930px) {
+  .footer {
+    padding: 100px 0%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 820px) {
+  .col_1 {
+    padding-inline: 115px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .col_3 {
+    padding-inline: 115px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 665px) {
+  .col_1 {
+    padding-inline: 90px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .col_3 {
+    padding-inline: 90px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .col_1 {
+    padding-inline: 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .col_3 {
+    padding-inline: 40px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 820px) {
+  .footer {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding: 0px;
+    padding-block: 100px;
+  }
+
+  form input {
+    width: 300px;
+  }
+}
+  </style>

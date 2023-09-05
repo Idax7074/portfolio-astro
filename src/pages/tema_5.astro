@@ -1,0 +1,157 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Tema 5">
+    <main>
+        <h1>Tema 5 - Grundlæggende indhold</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>05.01.02 Pilotsite</h2>
+            <p>
+              I denne opgave skulle vi lave et website, der præsenterede videoen vi redigerede i premiere pro. Videoen var et 1 minuts interview med en person, der fortalte om sin passion. Vi skulle minimun have 4 stilfotos et baggrundsbillede, portræt
+              foto, højformat foto og bredformat. Filmen skulle lægges ind på 2 forskellige måder. Vi skulle skrive tekster der fik pilotsitet til og fremstå som en ”filmplakat”.
+            </p>
+            <h2>Processen</h2>
+            <p>I samarbejde med Sofie interviewede og filmede vi hendes veninde Helena, hvis passion er fitness.</p>
+            <p>
+              I temaet lærte vi at arbejdede med premiere pro for at redigere pilotvideoen. Vi arbejdede med kamera, lys og lyd hvor vi sørgede for den interviewede stod i den rette vinkel i forhold til kameraet og at mikrofonen var indstillet rigtigt.
+            </p>
+            <p>Vi skulle lægge videoen ind på sitet både ved YouTube metode, hvor YouTube linket lægges ind på HTML filen med iframe. Den anden måde er med ”video” tagget, hvor videoen lægges op via filezilla og det link lægges ind på HTML filen.</p>
+            <p>Vi lærte om Git der er et versions-styrings-system, som tager ”snapshots” af ens filer og mapper. På GitHub kan man flette ens koder sammen og hjælpe med at undgå at overskrive hinandens kode.</p>
+          </div>
+          <div class="pic">
+            <img src="src/assets/images/pilotsite.webp" alt="Pilotsite for passion om træning billede" />
+            <div class="button">
+              <a href="https://idax7074.github.io/publ/">Helena Coaching</a>
+            </div>
+          </div>
+          <div class="pic1">
+            <img src="src/assets/images/lafresca.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://idax7074.github.io/Redesign_RESI/">La fresca</a>
+            </div>
+          </div>
+          <div class="text order">
+            <h2>05.02.01 Redesign og temadokumentation</h2>
+            <p>
+              I dette tema skulle vi redesigne en selvvalgt virksomheds website. Redesignet skulle ende ud i et kodet website og indeholde tekst, foto og video. Vi skulle også aflevere et procesdokument, som dokumenterede vores arbejdsproces. I
+              gruppearbejdet skulle vi arbejde ud fra SCRUM metoden. Vi skulle bruge de researchmetoder vi lærte tidligere.
+            </p>
+            <h2>Processen</h2>
+            <p>I vores gruppe arbejde vi sammen med pastabutikken ”La Fresca”, som ligger i Vanløse. Vi lavede interview af ejerne, og fik tilladelse til at filme deres arbejdsdag.</p>
+            <p>
+              Vi lærte om trello board hvor vi skrev opgaver der skulle gøres, der var ved at blive gjort, problemer og færdige opgaver. Vi sørgede for løbende at holde trello boardet opdateret, ved at flytte opgaverne når de var færdige. Hver morgen
+              holdt vi et dagligt scrum møde, hvor vi snakkede om hvad var blevet lavet dagen før og hvad der skulle laves i løbet af dagen.
+            </p>
+            <p>
+              Med trello boardet delte vi opgaverne ud. Jeg stod for forsiden på vores redesign, hvert gruppemedlem stod for en HTML- og CSS-fil så alle fik kodet. Dem i gruppen som havde de mindre komplicerede sider, redigerede vores interview video
+              og instagram video.
+            </p>
+            <p>
+              Vi lærte om BERT testen, som vi brugte for at undersøge virksomhedens nuværende website og koncept. En BERT test består af bipolære akser, hvor man får testpersonens holdninger om designet, ved at bruge et godt og dårligt ladet ord. Vi
+              fandt fra testen ud af at virksomhedens koncept ikke var tydeligt nok, så det ville vi ændre.
+            </p>
+          </div>
+          <div class="pic2">
+            <img src="src/assets/images/lafresca.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://idax7074.github.io/Redesign_RESI/">La fresca</a>
+            </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #e77d7940;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--septenary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--septenary);
+  border: 1px solid var(--septenary);
+  padding: 15px 40px;
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>

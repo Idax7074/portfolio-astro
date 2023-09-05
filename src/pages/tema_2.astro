@@ -1,0 +1,158 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Tema 2">
+    <main>
+        <h1>Tema 2 - Grundlæggende web</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>02.01.02 Website</h2>
+            <p>
+              I dette forløb skulle vi udarbejde vores første simple website. Ved at bruge grundlæggende HTML og CSS, som vi lærte i forløbet. I denne opgave skulle vi følge det givne layoutdiagram, wireframe, tekstdokument og bruge de vedlagte
+              billeder. Vi skulle tilføje farver og to forskellige fonte. Vi skulle få sitet til og være responsivt og det skulle validere uden nogen fejl.
+            </p>
+            <h2>Processen</h2>
+            <p>
+              Vi lærte at opsætte en HTML side, ved brug af semantiske tags, som vores h1’, h2, og p. Vi brugte også HTML-attributter, som href for at kunne linke til HTML filerne på sitet. Vi fik fortalt hvordan vi ved brug af CSS kan ændre websitets
+              baggrundsfarve, skriftfarve og skriftstørrelse. Desuden importerede vi vores egen font med font-face. Udover dette lærte vi om box-modellen, hvordan man med content, padding, border og margin kan få mellemrum rundt om og inde i boksen.
+            </p>
+  
+            <p>For at kunne få sitet til og være responsivt skulle vi bruge media query, for at kunne bestemme hvornår forskellige CSS styles for mobilsitet skulle tilføjes. Det gjorde vi ved at bruge max-width.</p>
+  
+            <p>
+              Vi lærte om Grid og Flex, så kunne vi følge layoutdiagrammet. CSS grid er et todimensionelt layout, grid-elementerne er inddelt i kolonner og rækker. Med CSS Flex Box kan du justere elementer lodret og vandret ved hjælp af kolonner og
+              rækker. Elementerne vil flekse til forskellige størrelser for at fylde rummet.
+            </p>
+          </div>
+          <div class="pic">
+            <img src="src/assets/images/min_computer.webp" alt="min computer hjemmeside billede" />
+            <div class="button">
+                <a href="https://hjortnaeskea-website.netlify.app/">Min computer</a>
+              </div>
+          </div>
+          <div class="pic1">
+            <img src="src/assets/images/idas_mad.webp" alt="Idas mad hjemmeside billede" />
+            <div class="button reverse">
+                <a href="https://hjortnaeskea-emnesite.netlify.app/">Ida's mad</a>
+              </div>
+          </div>
+          <div class="text order">
+            <h2>02.02.01 Emnesite</h2>
+            <p>
+              I denne opgave skulle vi udarbejde moodboards, wireframe og styletile, som passede til den stil vi havde valgt. Ud fra stilen skulle vi bruge farver og typografi på vores site. Derudover skulle vi sørge for at vores site var respontivt og
+              validerede.
+            </p>
+            <h2>Processen</h2>
+            <p>I temaet lærte vi om forskellige design principper, som gestalt lovene, kontrast, typografi og farver. Vi skulle også lave og følge vores eget layoutdiagram.</p>
+            <p>
+              Jeg valgte at lave et opskriftside med nemme opskrifter, der var tilegnet unge. Derfor valgte jeg en læsevenlig typografi "pontanosans" og mine farver på sitet var lyse og rolige. Disse er design principper, som bliver brugt i min valgte
+              stilart, som er moderne flat design.
+            </p>
+            <p>
+              Kontrasten på mit website blev skabt ved mine store og fængede billede, der var iøjefaldende, så læseren hurtigt viste hvad opskriften handlede om. Design principperne gør at sitet følger gestaltlovene, da det skaber et synligt hierarki,
+              så brugeren bliver guidet gennem websitet.
+            </p>
+          </div>
+          <div class="pic2">
+            <img src="src/assets/images/idas_mad.webp" alt="Idas mad hjemmeside billede" />
+            <div class="button reverse">
+                <a href="https://hjortnaeskea-emnesite.netlify.app/">Ida's mad</a>
+              </div>
+          </div>
+        </section>
+    </main>
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #df9f5740;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--quinary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--quinary);
+  border: 1px solid var(--quinary);
+  padding: 15px 40px;
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>

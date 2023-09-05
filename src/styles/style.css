@@ -1,0 +1,57 @@
+:root {
+  --primary: #faf9f6;
+  --secondary: #524d3f;
+  --tertiary: #252525;
+  --quaternary: #b45d3c;
+  --quinary: #e77d79;
+  --senary: #df9f57;
+  --septenary: #f5ca9e;
+
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  line-height: 1.6;
+  font-family: puffin-display-soft, sans-serif;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-family: trilby, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+button {
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

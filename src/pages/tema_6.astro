@@ -1,0 +1,120 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Tema 6">
+    <main>
+        <h1>Tema 6 - Portfolio eksamen</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>Beskrivelse og dokumentation</h2>
+            <p>
+              I dette tema skulle vi udarbejde et porfolio-website, som skulle præsentere de projekter, man har arbejdet med i løbet af semesteret. Websitet skulle som minimum indeholde en forside, ens portfolio og en ”om mig” side. Sitet skulle være
+              responsivt og validere både for HTML og CSS.
+            </p>
+            <h2>Processen</h2>
+            <p>
+              Denne opgave er opbygget af viden jeg har fået fra alle de andre temaer vi har haft om i dette semester. <br />
+              Jeg startede med at finde ud af hvordan mit website skulle se ud ved at lave moodboard, styletile og mockup. Jeg brugte designprincipperne, som vi lærte i tema 2.
+            </p>
+            <p>Ud fra den wireframe og layoutdiagram jeg har lavet, opsatte jeg websitet med HTML, CSS og JavaScript. Jeg har desuden brugt Grid, Flex og CSS-animationer for at style min website.</p>
+          </div>
+          <div class="pic">
+            <img src="src/assets/images/portfolio2.webp" alt="Lykke farve prototype billede" />
+          </div>
+        </section>
+      </main>  
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #df9f5740;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--quinary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--quinary);
+  border: 1px solid var(--quinary);
+  padding: 15px 40px;
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>

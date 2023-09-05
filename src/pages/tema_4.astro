@@ -1,0 +1,139 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Tema 4">
+    <main>
+        <h1>Tema 4 - Animation</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>04.04.01 Temaopgave</h2>
+            <p>
+              I opgave 04.04.01 temaopgave skulle vi designe og programmere et interaktivt og animeret spil. Vi skulle lave vores egne figurer og baggrunde i illustrator og gemme dem som svg filer. I vores spil skulle man kunne klikke på ting, som
+              enten faldt ned eller dukkede op. <br />
+              Der skulle både være gode og dårlige ting at klikke på, hvor man enten fik eller mistede point og mistede liv. Derudover skulle der vises tid, så brugeren vidste hvor lang tid der var tilbage. Vi skulle lave to slutninger en ”level
+              complete” og en ”game over”.
+            </p>
+            <h2>Processen</h2>
+            <p>Mit spil er ”Guldbar”, som handler om Benedikte der er til fredagscafe og skal have drukket nok inden hun skal i byen.</p>
+            <p>
+              Til denne opgave lærte vi om sproget JavaScript, CSS-animationer, aktivitetsdiagram og state machine diagram. <br />
+              Vi lærte om forskellige karakterdesigns, som line of action, hvor elementerne har mere dynamik og attitude. Ved at bruge former og linjer kan man understrege et elements personlighed. Min stilart for spillets baggrunde og spil figurer er
+              flat design 2.
+            </p>
+            <p>
+              Vi lavede aktivitetsdiagram og state machine diagram, som er en forståelig model af spillet. State machine diagrammet er mere detaljeret end aktivitetsdiagrammet. I state machine diagrammet skriver du også de forskellige animationer der
+              sker, når brugeren klikker på elementerne ind i modellen.
+            </p>
+            <p>
+              Med CSS-animationer bestemmer man animationens navn, hvor lang tid og hvor mange gange animationen skal forløbe. Vi lærte om keyframes, som er hvordan animation går fra en tilstand til en anden. <br />
+              Vi skulle opbygge vores spil via container og sprite princippet, ved at et spilelement i form af svg fil indsættes som baggrund på en sprite div, som placeres inde i en container div. På den måde ville vi både kunne sætte css animationer
+              på container og sprite.
+            </p>
+            <p>
+              I JavaScript lærte vi om document.querySelector, funktioner, addClass/removeClass, variabler, events, betingelser og math.random. Dette betød at vi kunne få vores spil til at virke optimalt, så man kunne klikke på figurelementerne, få dem
+              til at placere sig forskelligt, samt tælle point og liv.
+            </p>
+          </div>
+          <div class="pic">
+            <img src="src/assets/images/guldbar.webp" alt="Guldbar spillet animation" />
+            <div class="button">
+              <a href="https://hjortnaeskea.dk/kea/04_animation/website/spil.html">Guldbar spillet</a>
+            </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #f5ca9e40;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--senary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--senary);
+  border: 1px solid var(--senary);
+  padding: 15px 40px;
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>
